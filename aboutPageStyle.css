@@ -24,3 +24,9 @@ nav{
     list-style: none;
     font-size: 1.5rem;
 }
+
+/* changing anchor tags, removes blue highlight and underline */
+a{
+    color: inherit;
+    text-decoration: none;
+}
