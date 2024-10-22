@@ -1,32 +1,60 @@
+.space-mono-regular {
+    font-family: "Space Mono", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.space-mono-bold {
+    font-family: "Space Mono", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.space-mono-regular-italic {
+    font-family: "Space Mono", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.space-mono-bold-italic {
+    font-family: "Space Mono", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
 body {
     margin: 0;
     padding: 0;
     background-color: gray;
+    font-family: "Space Mono", serif;
+
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-nav, .nav-links{
+nav,
+.nav-links {
     display: flex;
 }
 
-nav{
+nav {
     width: 100vw;
     justify-content: space-around;
     align-items: center;
     height: 17vh;
 }
 
-.nav-links{
+.nav-links {
     gap: 2rem;
     list-style: none;
     font-size: 1.5rem;
 }
 
 /* changing anchor tags, removes blue highlight and underline */
-a{
+a {
     color: inherit;
     text-decoration: none;
 }

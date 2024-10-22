@@ -1,71 +1,167 @@
+/* General styles */
 body {
-    margin: 0;
-    padding: 0;
-    background-color: gray;
+    font-family: "Space Mono", serif;
+    background-color: rgb(60, 60, 60);
+    z-index: 0;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-nav, .nav-links{
-    display: flex;
+#logo {
+    /*color: black;*/
+    color: rgb(108, 44, 180);
+    margin-left: 25px;
+    text-shadow: 3px 3px rgb(0, 0, 0, .6);
 }
 
-nav{
-    background-color: rgb(97, 164, 245);
+/* Navigation bar styles */
+nav {
+    left: 0;
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    backdrop-filter: blur(3px);
+    /* Blur the background */
+    -webkit-backdrop-filter: blur(10px);
+    /* Safari support */
+    background-color: rgba(11, 92, 205, 0.95);
     width: 100vw;
-    justify-content: space-around;
+    height: 12vh;
+    display: flex;
+    /* Ensure the nav itself is a flexbox container */
+    justify-content: space-between;
+    /* Space between logo and nav-links */
     align-items: center;
-    height: 17vh;
+    /* Vertically center the items */
 }
 
-.nav-links{
-    gap: 2rem;
+
+
+/* Nav links styling */
+.nav-links {
+    margin-top: 25px;
+    display: flex;
+    /* Use flex, not flexbox */
+    justify-content: space-evenly;
+    /* Space the nav links evenly */
     list-style: none;
     font-size: 1.5rem;
+    flex-grow: 1;
+    /* Make it take the remaining space in the nav */
 }
 
-/* changing anchor tags, removes blue highlight and underline */
-a{
+/* Individual list items */
+.nav-links li {
+    text-shadow: 3px 3px black;
+    border: solid 2px black;
+    border-radius: 12px;
+    padding: 2px 12px;
+    font-weight: bold;
+    font-size: 1em;
+    transition: .15s;
+    margin-right: 14px;
+    color: white;
+}
+
+/* Hover effect on nav links */
+.nav-links li:hover {
+    /*opacity: .6; */
+    color: rgb(108, 44, 180);
+    transition: .25s;
+
+    transform: scale(1.05);
+}
+
+/* Active state of nav links */
+.nav-links li:active {
+    transition: .1s;
+    transform: scale(.98);
+    opacity: .8;
+}
+
+/* Changing anchor tags to remove blue highlight and underline */
+a {
     color: inherit;
     text-decoration: none;
 }
 
-
 /* General container for the search bar */
-.search-container{
+.search-container {
+    padding-top: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* Required for positioning */
-    top: 17vh; /* Moves the container down by 30% of the viewport height */
-    width: 100vw;
+    width: 100%;
 }
 
 /* Styling for the search bar */
-.search-bar{
-    width: 300px;
-    padding: 10px;
+.search-bar {
+    /* Inherit means to take the color of its parent div, aka body, aka blend in with background color*/
+    background-color: inherit;
+    width: 30%;
+    flex-shrink: 1;
     font-size: 16px;
-    border: 2px solid #ccc;
-    border-radius: 5px 0 0 5px; /* Rounded corners for left side */
+    border: none;
+    border-bottom: 2px solid #ccc;
     outline: none;
-}
-
-/* Styling for the search button */
-.search-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: 2px solid #ccc;
-    border-left: none;
-    border-radius: 0 5px 5px 0; /* Rounded corners for right side */
-    background-color: #4CAF50;
     color: white;
-    cursor: pointer;
+    text-align: center;
+    /* Center text and placeholder horizontally */
+
 }
 
-/* Hover effect on the button */
-.search-button:hover {
-    background-color: #45a049;
+/* Ensure placeholder text is visible, but not a bit transparent for better aesthetic */
+::placeholder {
+    color: white;
+    opacity: .2;
+}
+
+
+/*
+        Below Navigation & Search Bar.
+        
+    Containers in a row with scroll
+
+*/
+.rowContCont {
+    border: 2px solid black;
+    display: flex;
+}
+
+.ScrollButton {
+    width: 90px;
+}
+
+.rowContainer {
+    display: flex;
+    overflow: scroll;
+    border: 4px solid rgb(170, 154, 188);
+    padding: 10px 4px 10px 4px;
+    justify-content: space-between;
+}
+
+.itemContainer {
+    padding: 10px;
+    border: 2px solid black;
+    margin: 15px;
+}
+
+
+.itemTitle {
+    border-bottom: 2px solid black;
+    color: rgb(0, 0, 0);
+}
+
+.itemBox {
+    width: 100%;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 2px 10px 2px;
+    text-align: center;
+}
+
+.itemDescription {
+    border: 1px solid rgb(255, 255, 255);
 }
