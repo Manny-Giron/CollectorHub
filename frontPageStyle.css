@@ -13,7 +13,7 @@ nav{
     left: 0vw;
     align-items: center;
     justify-content: center;
-    gap: 8vw;
+    gap: 6vw;
     width: 100vw;
     height: 17vh;
     background-color: rgb(28, 0, 44);
@@ -32,7 +32,6 @@ nav{
 }
 
 .nav-links{
-    background-color: white;
     top: 8.5vh;
     margin-right: 2vw;
     padding: 0;
@@ -40,6 +39,11 @@ nav{
     gap: 2rem;
     font-size: 1.5rem;
     display: flex;
+}
+
+.nav-links img{
+    width: 120px;
+    height: auto;
 }
 
 /* changing anchor tags, removes blue highlight and underline */
