@@ -1,71 +1,98 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: gray;
+    background-color: rgb(255, 255, 255);
 }
 
 html{
     scroll-behavior: smooth;
 }
 
-nav, .nav-links{
+nav{
+    position: fixed;
+    display: flex;
+    top: 0vh;
+    left: 0vw;
+    align-items: center;
+    justify-content: center;
+    gap: 6vw;
+    width: 100vw;
+    height: 17vh;
+    background-color: rgb(28, 0, 44);
+}
+
+#logo{
+    top: 8.5vh;
+    margin: 0;
+    margin-left: 2vw;
     display: flex;
 }
 
-nav{
-    background-color: rgb(97, 164, 245);
-    width: 100vw;
-    justify-content: space-around;
-    align-items: center;
-    height: 17vh;
+#logo img{
+    width:20vw;
+    height: auto;
 }
 
 .nav-links{
-    gap: 2rem;
+    top: 8.5vh;
+    margin-right: 2vw;
+    padding: 0;
     list-style: none;
+    gap: 2rem;
     font-size: 1.5rem;
+    display: flex;
+}
+
+.nav-links img{
+    width: 120px;
+    height: auto;
 }
 
 /* changing anchor tags, removes blue highlight and underline */
 a{
-    color: inherit;
+    color: rgb(54, 191, 33);
     text-decoration: none;
 }
-
 
 /* General container for the search bar */
 .search-container{
     display: flex;
     justify-content: center;
-    align-items: center;
-    position: relative; /* Required for positioning */
-    top: 17vh; /* Moves the container down by 30% of the viewport height */
-    width: 100vw;
+    width: 650px;
+    height: 6vh;
 }
 
 /* Styling for the search bar */
 .search-bar{
-    width: 300px;
+    color: white;
+    background-color: inherit;
+    width: inherit;
     padding: 10px;
     font-size: 16px;
     border: 2px solid #ccc;
-    border-radius: 5px 0 0 5px; /* Rounded corners for left side */
+    border-right: none;
+    border-radius: 50px 0 0 50px; /* Rounded corners for left side */
     outline: none;
 }
 
 /* Styling for the search button */
 .search-button {
+    background-color: inherit;
+    height: 6vh;
     padding: 10px 20px;
     font-size: 16px;
     border: 2px solid #ccc;
     border-left: none;
-    border-radius: 0 5px 5px 0; /* Rounded corners for right side */
-    background-color: #4CAF50;
+    border-radius: 0 50px 50px 0; /* Rounded corners for right side */
     color: white;
     cursor: pointer;
+    transition: .1s;
+}
+
+.search-button img{
+    height: 3vh;
 }
 
 /* Hover effect on the button */
-.search-button:hover {
-    background-color: #45a049;
+.search-button img:hover {
+    transition: .125s;
+    transform: scale(1.15)
 }
