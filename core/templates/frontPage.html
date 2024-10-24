@@ -1,24 +1,27 @@
+ <!-- Load static files -->
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CollectorHub</title>
-        <link rel="stylesheet" href="frontPageStyle.css">
+        <link rel="stylesheet" href="{% static 'core/css/front.css' %}">
     </head>
     <body> 
         <nav>
 
             <!--nav logo-->
             <div id=logo> 
-                <img src="images/CHLogo.png">
+                <!-- Use static tag to load images -->
+                <img src="{% static 'core/images/CHLogo.png' %}" alt="CollectorHub Logo">
             </div>
             
             <!--nav search bar-->
             <div class="search-container">
                 <input type="text" placeholder="Search..." class="search-bar">
                 <button type="submit" class="search-button">
-                   <img src = "images/search-magnifier-white.png">
+                    <img src="{% static 'core/images/search-magnifier-white.png' %}" alt="Search">
                 </button>
             </div>
 
