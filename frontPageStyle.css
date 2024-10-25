@@ -1,7 +1,7 @@
 /* General styles */
 body {
     font-family: "Space Mono", serif;
-    background-color: rgb(60, 60, 60);
+    background-color: rgb(235, 235, 235);
     z-index: 0;
 }
 
@@ -10,26 +10,33 @@ html {
 }
 
 #logo {
-    /*color: black;*/
-    color: rgb(108, 44, 180);
-    margin-left: 25px;
+    /*Stying for alternative test if image doesn't load*/
+    margin-left: 1%;
+    color: black;
     text-shadow: 3px 3px rgb(0, 0, 0, .6);
 }
 
+.logoIMG {
+    margin: 0 1vw 0 1vw;
+    max-height: 9vh;
+}
+
 /* Navigation bar styles */
-nav {
+#desktop-nav {
+    height: auto;
     left: 0;
     top: 0;
+    width: 100%;
+    height: 12vh;
+    display: flex;
     z-index: 100;
     position: fixed;
+
     backdrop-filter: blur(3px);
     /* Blur the background */
     -webkit-backdrop-filter: blur(10px);
     /* Safari support */
-    background-color: rgba(11, 92, 205, 0.95);
-    width: 100vw;
-    height: 12vh;
-    display: flex;
+    background-color: rgba(46, 0, 92, 0.95);
     /* Ensure the nav itself is a flexbox container */
     justify-content: space-between;
     /* Space between logo and nav-links */
@@ -37,33 +44,180 @@ nav {
     /* Vertically center the items */
 }
 
+/*
+        SECTION BELOW IS ALL ABOUT SEARCH BUTTON
+*/
+
+
+
+/* Container for search bar within navigation (When  visibile */
+.navSearch {
+    transition: 1s;
+    display: none;
+    flex-shrink: 1;
+
+    justify-content: center;
+    align-items: center;
+    min-width: 1vw;
+}
+
+/* Styling for the search bar /
+.search-bar {
+    / Inherit means to take the color of its parent div, aka body, aka blend in with background color/
+    width: 100%;
+    flex-grow: 1;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border: 1vwpx solid black;
+    border-radius: 1vw;
+    width: 30%;
+    flex-shrink: 1;
+    font-size: 1em;
+    outline: none;
+    color: black;
+    text-align: center;
+    / Center text and placeholder horizontally /
+
+}
+*/
+
+
+/* Container for the search bar  below nav*/
+/*
+.search-container {
+    padding-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+*/
+
+/* General container for the search bar */
+.search-container {
+    margin-top: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Required for positioning */
+    top: 17vh;
+    /* Moves the container down by 30% of the viewport height */
+    width: 100vw;
+}
+
+/* Styling for the search bar */
+.search-bar {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    /* Rounded corners for left side */
+    outline: none;
+}
+
+/* Styling for the search button */
+.search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    /* Rounded corners for right side */
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Ensure placeholder text is visible, but not a bit transparent for better aesthetic */
+::placeholder {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    opacity: .6;
+}
+
+
+/*
+        SECTION ABOVE IS ALL ABOUT SEARCH BUTTON
+*/
+
+
+
 
 
 /* Nav links styling */
 .nav-links {
-    margin-top: 25px;
     display: flex;
-    /* Use flex, not flexbox */
-    justify-content: space-evenly;
-    /* Space the nav links evenly */
+    justify-content: space-between;
+    margin: 3vh 0 3vh;
     list-style: none;
     font-size: 1.5rem;
-    flex-grow: 1;
     /* Make it take the remaining space in the nav */
 }
 
 /* Individual list items */
 .nav-links li {
+    overflow: hide;
+    margin: 1ex;
+    /* Removes the dot symbol left of list items*/
+    text-align: center;
+    padding: 1ex;
     text-shadow: 3px 3px black;
     border: solid 2px black;
-    border-radius: 12px;
-    padding: 2px 12px;
+    border-radius: 2vh;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1rem;
     transition: .15s;
-    margin-right: 14px;
     color: white;
+    flex-shrink: 1;
+
 }
+
+.menu-toggle {
+    display: none;
+}
+
+.dropdown {
+    position: relative;
+    /* Set the dropdown container to be the reference point */
+}
+
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: initial;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 2rem;
+        position: absolute;
+        cursor: pointer;
+        right: 1px;
+    }
+
+    .menu-toggle:hover {
+        opacity: .8;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 1;
+        /* Adjust based on nav bar height */
+        right: 0;
+        width: 10vw;
+        background-color: rgba(46, 0, 92, 0.95);
+    }
+
+
+
+}
+
+@media (scroll) {}
 
 /* Hover effect on nav links */
 .nav-links li:hover {
@@ -71,14 +225,13 @@ nav {
     color: rgb(108, 44, 180);
     transition: .25s;
 
-    transform: scale(1.05);
+    /*transform: scale(1.05);*/
 }
 
 /* Active state of nav links */
 .nav-links li:active {
     transition: .1s;
-    transform: scale(.98);
-    opacity: .8;
+    opacity: .6;
 }
 
 /* Changing anchor tags to remove blue highlight and underline */
@@ -87,36 +240,58 @@ a {
     text-decoration: none;
 }
 
-/* General container for the search bar */
-.search-container {
-    padding-top: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+
+/*
+        SECTION BELOW IS ALL ABOUT DROP DOWN MENU
+*/
+
+
+.dropbtn {
+    cursor: pointer;
 }
 
-/* Styling for the search bar */
-.search-bar {
-    /* Inherit means to take the color of its parent div, aka body, aka blend in with background color*/
-    background-color: inherit;
-    width: 30%;
-    flex-shrink: 1;
-    font-size: 16px;
-    border: none;
-    border-bottom: 2px solid #ccc;
-    outline: none;
+.dropdown-content {
+    list-style-type: none;
+    border-bottom-left-radius: 1vw;
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 75%;
+    min-width: 160px;
+    z-index: 1;
+    padding: 4vh 0 0 0;
+}
+
+
+.dropdown-content li {
+    margin-top: 1vh;
+    border-color: rgb(0, 0, 0);
+    backdrop-filter: blur(3px);
+    /* Blur the background */
+    -webkit-backdrop-filter: blur(10px);
+    /* Safari support */
+    background-color: rgba(46, 0, 92, 0.95);
     color: white;
-    text-align: center;
-    /* Center text and placeholder horizontally */
+}
+
+
+.dropdown:hover .dropdown-content {
+    transition: .25s;
+    display: block;
 
 }
 
-/* Ensure placeholder text is visible, but not a bit transparent for better aesthetic */
-::placeholder {
-    color: white;
-    opacity: .2;
+.dropdown-content:active {
+    opacity: 1;
 }
+
+
+
+
+/*
+        SECTION ABOVE IS ALL ABOUT DROP DOWN MENU
+*/
+
 
 
 /*
@@ -137,7 +312,7 @@ a {
 .rowContainer {
     display: flex;
     overflow: scroll;
-    border: 4px solid rgb(170, 154, 188);
+    border: 2px solid rgb(0, 0, 0);
     padding: 10px 4px 10px 4px;
     justify-content: space-between;
 }
@@ -146,6 +321,7 @@ a {
     padding: 10px;
     border: 2px solid black;
     margin: 15px;
+    background-color: white;
 }
 
 
@@ -164,4 +340,5 @@ a {
 
 .itemDescription {
     border: 1px solid rgb(255, 255, 255);
+    padding: 4px;
 }
