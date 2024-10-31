@@ -43,21 +43,29 @@ nav{
     align-items: center;
 }
 
+.nav-links img:hover{
+    transition: .125s;
+    transform: scale(1.15)
+}
+
 #watchlist-img{
-    width: 40px;
+    width: 50px;
     background-color: none;
+    transition: .125s;
 }
 
 #about-us-img{
-    width: 65px;
+    width: 70px;
     clip-path:inset(8px 7px 8px 7px);
     background-color: none;
+    transition: .125s;
 }
 
 #login-img{
     width: 40px;
     clip-path: inset();
     background-color: none;
+    transition: .125s;
 }
 
 /* changing anchor tags, removes blue highlight and underline */
@@ -98,7 +106,7 @@ a{
     border-radius: 0 50px 50px 0; /* Rounded corners for right side */
     color: white;
     cursor: pointer;
-    transition: .1s;
+    transition: .125s;
 }
 
 .search-button img{
