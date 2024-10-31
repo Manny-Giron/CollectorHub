@@ -13,7 +13,7 @@ nav{
     left: 0vw;
     align-items: center;
     justify-content: center;
-    gap: 6vw;
+    gap: 100px;
     width: 100vw;
     height: 13vh;
     min-height: 10vh; /*not working for some reason*/

@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    top: 0vh;
+    left: 0vw;
+    align-items: center;
+    justify-content: center;
+    gap: 850px;
+    width: 100vw;
+    height: 13vh;
+    min-height: 10vh; /*not working for some reason*/
+    background-color: rgb(28, 0, 44);
+}
+
+#logo{
+    top: 8.5vh;
+    margin: 0;
+    margin-left: 2vw;
+    display: flex;
+}
+
+#logo img{
+    width:15vw;
+    height: auto;
+}
+
+.nav-links{
+    top: 8.5vh;
+    margin-right: 2vw;
+    padding: 0;
+    list-style: none;
+    gap: 2rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links img:hover{
+    transition: .125s;
+    transform: scale(1.15)
+}
+
+#watchlist-img{
+    width: 50px;
+    background-color: none;
+    transition: .125s;
+}
+
+#about-us-img{
+    width: 70px;
+    clip-path:inset(8px 7px 8px 7px);
+    background-color: none;
+    transition: .125s;
+}
+
+#login-img{
+    width: 40px;
+    clip-path: inset();
+    background-color: none;
+    transition: .125s;
+}
+
+/* changing anchor tags, removes blue highlight and underline */
+a{
+    color: rgb(54, 191, 33);
+    text-decoration: none;
+}
+
+#page-title{
+    color: black;
+    position: absolute;
+    top: 13vh;
+    left: 5vw;
+    font-family: Kanit;
+    
+}
