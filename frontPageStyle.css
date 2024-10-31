@@ -15,7 +15,8 @@ nav{
     justify-content: center;
     gap: 6vw;
     width: 100vw;
-    height: 17vh;
+    height: 13vh;
+    min-height: 10vh; /*not working for some reason*/
     background-color: rgb(28, 0, 44);
 }
 
@@ -27,7 +28,7 @@ nav{
 }
 
 #logo img{
-    width:20vw;
+    width:15vw;
     height: auto;
 }
 
@@ -39,11 +40,24 @@ nav{
     gap: 2rem;
     font-size: 1.5rem;
     display: flex;
+    align-items: center;
 }
 
-.nav-links img{
-    width: 120px;
-    height: auto;
+#watchlist-img{
+    width: 40px;
+    background-color: none;
+}
+
+#about-us-img{
+    width: 65px;
+    clip-path:inset(8px 7px 8px 7px);
+    background-color: none;
+}
+
+#login-img{
+    width: 40px;
+    clip-path: inset();
+    background-color: none;
 }
 
 /* changing anchor tags, removes blue highlight and underline */
