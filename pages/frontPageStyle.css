@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(243, 242, 236);
 }
 
 html{
@@ -17,7 +17,7 @@ nav{
     width: 100vw;
     height: 13vh;
     min-height: 10vh; /*not working for some reason*/
-    background-color: rgb(28, 0, 44);
+    background-color: rgb(141, 140, 128);
 }
 
 #logo{
@@ -25,10 +25,13 @@ nav{
     margin: 0;
     margin-left: 2vw;
     display: flex;
+    font-family: Rowdies;
+    color: white;
+    font-size: 30px;
 }
 
 #logo img{
-    width:15vw;
+    width:8.5vw;
     height: auto;
 }
 
@@ -70,7 +73,9 @@ nav{
 
 /* changing anchor tags, removes blue highlight and underline */
 a{
-    color: rgb(54, 191, 33);
+    display: flex;
+    align-items: center;
+    color: inherit;
     text-decoration: none;
 }
 
