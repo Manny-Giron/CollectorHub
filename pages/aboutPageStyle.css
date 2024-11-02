@@ -122,6 +122,25 @@ a{
     background-color: blue;
 }
 
-.right{
-
+.right,
+.student-title,
+.contact,
+.contact-title,
+.phone-img,
+.email-img,
+.linkedin-img,
+.resume,
+.resume-img,
+.inner-container,
+.about-me-title,
+.about-me,
+.highlights-title,
+.highlights,
+.experience-titlem,
+.experience,
+.education-title,
+.education,
+.skills-title,
+.skills{
+    display: none; /* Hides these elements for now */
 }
