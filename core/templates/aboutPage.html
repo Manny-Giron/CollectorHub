@@ -26,8 +26,8 @@
 
             <!--nav logo-->
             <div id=logo> 
-                <a href="/pages/frontPage.html">
-                    <img src="{% static 'core/images/CHLogo.png' %}">CollectorHub
+                <a href="{% url 'home' %}">
+                    <img src="{% static 'core/images/CHLogo.png' %}">
                 </a>
             </div>
 
@@ -40,7 +40,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/pages/aboutPage.html">
+                        <a href="{% url 'about' %}">
                             <img id="about-us-img" src="{% static 'core/images/about-us.png' %}" alt="About Us">
                         </a>
                     </li>
