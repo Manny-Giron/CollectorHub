@@ -120,7 +120,7 @@ STATIC_URL = 'static/'
 
 # Location for static files
 STATICFILES_DIRS = [
-    BASE_DIR / "static",  # Global static directory (optional)
+   BASE_DIR / "static",  # Global static directory (optional)
 ]
 
 # Default primary key field type
