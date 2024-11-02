@@ -11,6 +11,7 @@ html{
 }
 
 nav{
+    z-index: 100;
     position: fixed;
     display: flex;
     top: 0vh;
@@ -84,15 +85,52 @@ a{
 }
 
 /*page underneath nav*/
-
-.content{
+.page-content{
     display: flex;
     position: relative;
     justify-content: center;
-    top: 14vh;
-    height: 810px;
+    padding-bottom: 35px;
+    gap: 100px;
+    top: 13vh;
+    height: fit-content;
+    width: 100vw;
+    font-family: DM Sans;
+}
+
+.about-us-content{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    z-index: 1;
+    top: 150px;
+    left: 90px;
+    height: 750px;
+    width: 1000px;
+}
+
+.about-us-title{
+    height: fit-content;
+    font-weight: bolder;
+    font-family: Lexend;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Light black shadow */
+}
+
+.about-us{
+
+}
+
+.profile-content{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 25px;
+    left: 550px;
+    justify-content: center;
     width:fit-content;
-    gap: 10px;
+    gap: 110px;
 }
 
 .profile{
@@ -109,7 +147,6 @@ a{
     width: 175px;
     border-radius: 15px 0px 0px 15px;
     background: rgb(0, 0, 0);
-    font-family: DM Sans;
 }
 
 .name{
@@ -203,6 +240,7 @@ a{
     height: 760px;
     margin-top: 20px;
     margin-right: 20px;
+    margin-bottom: 20px;
     border: 5px solid black;
     border-radius: 0px 5px 5px 0px;
     border-left: none;
