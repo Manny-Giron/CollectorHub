@@ -21,7 +21,7 @@ nav{
     width: 100vw;
     height: 13vh;
     min-height: 10vh; /*not working for some reason*/
-    background-color: rgb(141, 140, 128);
+    background-color: rgb(45, 20, 66);
 }
 
 #logo{
@@ -88,10 +88,9 @@ a{
 .content{
     display: flex;
     position: relative;
-    background-color: green;
     justify-content: center;
     top: 14vh;
-    height: 83vh;
+    height: 810px;
     width:fit-content;
     gap: 10px;
 }
@@ -99,23 +98,25 @@ a{
 .profile{
     position: relative;
     display: flex;
-    background-color: rgb(61, 61, 56);
     height: auto;
-    width: 600px;
+    width: 615px;
 }
 
 .left{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 160px;
-    background: rgb(34, 22, 77);
+    width: 175px;
+    border-radius: 15px 0px 0px 15px;
+    background: rgb(0, 0, 0);
+    font-family: DM Sans;
 }
 
 .name{
     margin: 10px;
-    margin-bottom: 70px;
-    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-weight: 500;
     font-size: 25px;
     color: white;
 }
@@ -126,33 +127,38 @@ a{
     padding-bottom: 10px;
     border-bottom: 5px solid white;
     border-radius: 2.5px;
-    font-weight: lighter;
+    font-weight: 200;
     font-size: 22px;
     color: white;
 }
 
 .profile-pic{
-    width: 160px;
+    width: 175px;
     height: 200px;
     margin-bottom: 20px;
-    background-color: blue;
-}
-
-.contact-title{
-    margin: 10px;
-    font-weight: bold;
-    font-size: 22px;
-    color: white;
+    background-color: rgb(45, 20, 66);
 }
 
 .contacts{
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
     gap: 10px;
 }
 
+.contact-title{
+    margin: 0;
+    font-weight: 500;
+    font-size: 22px;
+    color: white;
+}
+
 .contact-container{
     display: flex;
+    gap: 8px;
+    align-items: center;
+    color: white;
+    font-size: 12px;
 }
 
 .phone-img{
@@ -174,7 +180,7 @@ a{
     display: flex;
     flex-direction: column;
     gap: 5px;
-    margin-top: 30px;
+    margin-top: 70px;
 }
 
 .resume-img{
@@ -186,8 +192,22 @@ a{
     color: white;
 }
 
-.right,
-.inner-container,
+.right{
+    background-color: rgb(173, 172, 162);
+    border-radius: 0px 15px 15px 0px;
+    width: 450px;
+}
+
+.inner-container{
+    width: 420px;
+    height: 760px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border: 5px solid black;
+    border-radius: 0px 5px 5px 0px;
+    border-left: none;
+}
+
 .about-me-title,
 .about-me,
 .highlights-title,

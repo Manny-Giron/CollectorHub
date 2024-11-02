@@ -17,7 +17,7 @@ nav{
     width: 100vw;
     height: 13vh;
     min-height: 10vh; /*not working for some reason*/
-    background-color: rgb(141, 140, 128);
+    background-color: rgb(45, 20, 66);
 }
 
 #logo{
