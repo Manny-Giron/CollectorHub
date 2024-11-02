@@ -1,6 +1,8 @@
 body {
+    display: flex;
     margin: 0;
     padding: 0;
+    justify-content: center;
     background-color: rgb(243, 242, 236);
 }
 
@@ -89,7 +91,6 @@ a{
     background-color: green;
     justify-content: center;
     top: 14vh;
-    left: 4vw;
     height: 83vh;
     width:fit-content;
     gap: 10px;
@@ -100,37 +101,92 @@ a{
     display: flex;
     background-color: rgb(61, 61, 56);
     height: auto;
-    width: 575px;
+    width: 600px;
 }
 
 .left{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 150px;
-    background: red;
+    width: 160px;
+    background: rgb(34, 22, 77);
 }
 
 .name{
-    background-color: orange;
     margin: 10px;
+    margin-bottom: 70px;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+}
+
+.student-title{
+    margin: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid white;
+    border-radius: 2.5px;
+    font-weight: lighter;
+    font-size: 22px;
+    color: white;
 }
 
 .profile-pic{
-    width: 150px;
+    width: 160px;
     height: 200px;
+    margin-bottom: 20px;
     background-color: blue;
 }
 
+.contact-title{
+    margin: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+}
+
+.contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-container{
+    display: flex;
+}
+
+.phone-img{
+    width: 25px;
+    height: 25px;
+}
+
+.email-img{
+    width: 25px;
+    height: auto;
+}
+
+.linkedin-img{
+    width: 25px;
+    height: auto;
+}
+
+.resume{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 30px;
+}
+
+.resume-img{
+    width: 25px;
+    height: auto;
+}
+
+.resume-link{
+    color: white;
+}
+
 .right,
-.student-title,
-.contact,
-.contact-title,
-.phone-img,
-.email-img,
-.linkedin-img,
-.resume,
-.resume-img,
 .inner-container,
 .about-me-title,
 .about-me,
