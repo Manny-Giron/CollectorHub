@@ -216,7 +216,7 @@ a{
     display: flex;
     flex-direction: column;
     gap: .3vh;
-    margin-top: 3vh;
+    margin-top: 3.5vh;
 }
 
 .resume-img{
@@ -226,6 +226,7 @@ a{
 
 .resume-link{
     color: white;
+    margin: 0;
 }
 
 .right{
