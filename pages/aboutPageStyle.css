@@ -89,8 +89,8 @@ a{
     display: flex;
     position: relative;
     justify-content: center;
-    padding-bottom: 35px;
-    gap: 100px;
+    padding: 3vh;
+    gap: 15vw;
     top: 13vh;
     height: fit-content;
     width: 100vw;
@@ -102,12 +102,12 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 2vh;
+    padding-top: 0;
     z-index: 1;
-    top: 150px;
-    left: 90px;
-    height: 750px;
-    width: 1000px;
+    left: 4vw;
+    height: 79vh;
+    width: 53vw;
 }
 
 .about-us-title{
@@ -117,34 +117,31 @@ a{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Light black shadow */
 }
 
-.about-us{
-
-}
-
 .profile-content{
     z-index: 1;
     display: flex;
     flex-direction: column;
     position: relative;
-    top: 25px;
-    left: 550px;
+    left: 29vw;
     justify-content: center;
     width:fit-content;
-    gap: 110px;
+    gap: 10vh;
 }
 
 .profile{
     position: relative;
     display: flex;
     height: auto;
-    width: 615px;
+    /*width: 615px;*/
+    width: 33vw;
 }
 
 .left{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 175px;
+    /*width: 175px;*/
+    width: fit-content;
     border-radius: 15px 0px 0px 15px;
     background: rgb(0, 0, 0);
 }
@@ -232,15 +229,16 @@ a{
 .right{
     background-color: rgb(173, 172, 162);
     border-radius: 0px 15px 15px 0px;
-    width: 450px;
+    /*width: 450px;*/
+    width: 25vw;
 }
 
 .inner-container{
-    width: 420px;
-    height: 760px;
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
+    width: 22.5vw;
+    height: 76vh;
+    margin-top: 2vh;
+    margin-right: 1.1vw;
+    margin-bottom: 2vh;
     border: 5px solid black;
     border-radius: 0px 5px 5px 0px;
     border-left: none;
