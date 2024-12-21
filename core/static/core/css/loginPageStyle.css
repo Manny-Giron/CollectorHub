@@ -178,3 +178,24 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
     background-color: rgb(45, 20, 66);
 }
+
+div p {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+    color: rgb(45, 20, 66);
+}
+
+div a {
+    display: block;
+    text-align: center;
+    color: rgb(45, 20, 66);
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 5px;
+    transition: color 0.3s ease;
+}
+
+div a:hover {
+    color: rgb(33, 15, 50); /* Slightly darker color on hover */
+}
