@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CollectorHub</title>
+        <!--link to css file-->
+        <link rel="stylesheet" href="{% static 'core/css/frontPageStyle.css' %}">
+        <!--link to google fonts-->
+        <!--Rowdies-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+        <!--Quicksand-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Quicksand:wght@300..700&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+        <!--DM Sans-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend:wght@100..900&family=Quicksand:wght@300..700&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body> 
+        <nav>
+
+            <!--nav logo-->
+            <div id=logo> 
+                <a href="{% url 'home' %}">
+                    <img src="{% static 'core/images/CHLogo.png' %}">
+                </a>
+            </div>
+            
+            <!--nav search bar-->
+            <div class="search-container">
+                <input type="text" placeholder="Search..." class="search-bar">
+                <button type="submit" class="search-button">
+                   <img src="{% static 'core/images/search-magnifier-white.png' %}">
+                </button>
+            </div>
+
+            <!--nav links-->
+            <div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="/pages/aboutPage.html">
+                            <img id="watchlist-img" src="{% static 'core/images/bino.png' %}" alt="Watchlist">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'about' %}">
+                            <img id="about-us-img" src="{% static 'core/images/about-us.png' %}" alt="About Us">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'login' %}">
+                            <img id="login-img" src="{% static 'core/images/login.png' %}" alt="Login">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!--temporary objects for so that I can scroll on the website-->
+        <div>
+            <h2>Temp List</h2>
+            <ul>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+                <li>object</li>
+            </ul>
+        </div>
+    </body>
+</html>

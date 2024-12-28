@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% load static %}
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+        <!--link to css file-->
+        <link rel="stylesheet" href="{% static 'core/css/aboutPageStyle.css' %}">
+        <!--link to google fonts-->
+        <!--Rowdies-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+        <!--Quicksand-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Quicksand:wght@300..700&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+        <!--DM Sans-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend:wght@100..900&family=Quicksand:wght@300..700&family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+    <body> 
+        <nav>
+
+            <!--nav logo-->
+            <div id=logo> 
+                <a href="{% url 'home' %}">
+                    <img src="{% static 'core/images/CHLogo.png' %}">
+                </a>
+            </div>
+
+            <!--nav links-->
+            <div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="/pages/aboutPage.html">
+                            <img id="watchlist-img" src="{% static 'core/images/bino.png' %}" alt="Watchlist">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'about' %}">
+                            <img id="about-us-img" src="{% static 'core/images/about-us.png' %}" alt="About Us">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{% url 'login' %}">
+                            <img id="login-img" src="{% static 'core/images/login.png' %}" alt="Login">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="content">
+
+            <!--Noah's profile-->
+            <div class="profile">
+                <div class="left">
+                    <h1 class="name">NOAH<br>VARGAS</h1>
+                    <h1 class="student-title">COMPUTER<br>ENGINEERING</h1>
+                    <div class="profile-pic"></div>
+                    <div class="contacts">
+                        <h1 class="contact-title">CONTACTS</h1>
+                        <div class="contact-container">
+                            <img class="phone-img" src="{% static 'core/images/phone.png' %}">
+                            <p>+1(401)390-6534</p>
+                        </div>
+                        <div class="contact-container">
+                            <img class="email-img" src="{% static 'core/images/email.png' %}">
+                            <p>noahvar23@gmail.com</p>
+                        </div>
+                        <div class="contact-container">
+                            <img class="linkedin-img" src="{% static 'core/images/linkedin.png' %}">
+                            <a href="linkedin.com/in/noah-vargas-52b501279">LinkedIn</a>
+                        </div>
+                    </div>
+                    <div class="resume">
+                        <img class="resume-img" src="{% static 'core/images/resume.png' %}">
+                        <a class="resume-link" href="path/to/your-resume.pdf">View Resume</a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="inner-container">
+                        <div class="about-me-title"></div>
+                        <div class="about-me"></div>
+                        <div class="highlights-title"></div>
+                        <div class="highlights"></div>
+                        <div class="experience-title"></div>
+                        <div class="experience"></div>
+                        <div class="education-title"></div>
+                        <div class="education"></div>
+                        <div class="skills-title"></div>
+                        <div class="skills"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Manny's profile-->
+            <div class="profile">
+                <div class="left">
+                    <h1 class="name">EMMANUEL<br>GIRON</h1>
+                    <h1 class="student-title">COMPUTER<br>SCIENCE</h1>
+                    <div class="profile-pic"></div>
+                    <div class="contacts">
+                        <h1 class="contact-title">CONTACTS</h1>
+                        <div class="contact-container">
+                            <img class="phone-img" src="{% static 'core/images/phone.png' %}">
+                            <p>+1(401)XXX-XXXX</p>
+                        </div>
+                        <div class="contact-container">
+                            <img class="email-img" src="{% static 'core/images/email.png' %}">
+                            <p>XXXXXXX@gmail.com</p>
+                        </div>
+                        <div class="contact-container">
+                            <img class="linkedin-img" src="{% static 'core/images/linkedin.png' %}">
+                            <a href="linkedin.com/in/emmanuel-giron">LinkedIn</a>
+                        </div>
+                    </div>
+                    <div class="resume">
+                        <img class="resume-img" src="{% static 'core/images/resume.png' %}">
+                        <a class="resume-link" href="path/to/your-resume.pdf">View Resume</a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="inner-container">
+                        <div class="about-me-title"></div>
+                        <div class="about-me"></div>
+                        <div class="highlights-title"></div>
+                        <div class="highlights"></div>
+                        <div class="experience-title"></div>
+                        <div class="experience"></div>
+                        <div class="education-title"></div>
+                        <div class="education"></div>
+                        <div class="skills-title"></div>
+                        <div class="skills"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Josh's profile-->
+            <div class="profile">
+                <div class="left">
+                    <h1 class="name">JOSHUA<br>PEREIRA</h1>
+                    <h1 class="student-title">COMPUTER<br>ENGINEERING</h1>
+                    <div class="profile-pic"></div>
+                    <div class="contacts">
+                        <h1 class="contact-title">CONTACTS</h1>
+                        <div class="contact-container">
+                            <img class="phone-img" src="{% static 'core/images/phone.png' %}">
+                            <p>+1(401)XXX-XXXX</p>
+                        </div>
+                        <div class="contact-container">
+                            <img class="email-img" src="{% static 'core/images/email.png' %}">
+                            <p>XXXXXXX@gmail.com</p>
+                        </div>
+                        <div class="contact-container">
+                            <img class="linkedin-img" src="{% static 'core/images/linkedin.png' %}">
+                            <a href="linkedin.com/in/joshuapereira-software">LinkedIn</a>
+                        </div>
+                    </div>
+                    <div class="resume">
+                        <img class="resume-img" src="{% static 'core/images/resume.png' %}">
+                        <a class="resume-link" href="path/to/your-resume.pdf">View Resume</a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="inner-container">
+                        <div class="about-me-title"></div>
+                        <div class="about-me"></div>
+                        <div class="highlights-title"></div>
+                        <div class="highlights"></div>
+                        <div class="experience-title"></div>
+                        <div class="experience"></div>
+                        <div class="education-title"></div>
+                        <div class="education"></div>
+                        <div class="skills-title"></div>
+                        <div class="skills"></div>
+                    </div>
+                </div>
+            </div>
+            <!--end of profiles-->
+        </div>
+    </body>
+</html>
